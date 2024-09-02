@@ -1,0 +1,14 @@
+{
+    "presets": [
+        "{ vector4( $x, $y, $z, $h ) },",
+        "{ vector3( $x, $y, $z ) },",
+        "{ vector2( $x, $y ) },",
+        "[$s] = { x = $x, y = $y, z = $z },",
+        "{ x = $x, y = $y, z = $z },",
+        "{ x = $x, y = $y, z = $z, h = $h },",
+        "{ $x, $y, $z, $h },",
+        "{ $x, $y, $z },",
+        "vector2( $x, $y ),",
+        "$x, $y, $z, $h"
+    ]
+}

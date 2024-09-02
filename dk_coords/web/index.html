@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <title>DK Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="display: none;">
+        <div onclick="selectOption('sequencial')" class="collectOption sequencial">
+            <h1>Sequencial</h1>
+            <p>Colete uma sequência de coordenadas.</p>
+        </div>
+        <div onclick="selectOption('polyzone')" class="collectOption polyzone">
+            <h1>PolyZone</h1>
+            <p>Colete coordenadas de um PolyZone, com visualização em tempo real.</p>
+        </div>
+    </div>
+    <ul class="controls" style="display: none;">
+        <li>
+            <div class="button">E</div>
+            <div class="action">Adicionar</div>
+        </li>
+        <li>
+            <div class="button">BACKSPACE</div>
+            <div class="action">Voltar</div>
+        </li>
+        <li>
+            <div class="button">PGUP</div>
+            <div class="action">Subir</div>
+        </li>
+        <li>
+            <div class="button">PGDN</div>
+            <div class="action">Descer</div>
+        </li>
+        <li>
+            <div class="button">ENTER</div>
+            <div class="action">Finalizar</div>
+        </li>
+        <li>
+            <div class="button">C</div>
+            <div class="action">Cancelar</div>
+        </li>
+    </ul>
+    <div class="descriptionContainer" style="display: none;">
+        <h1>Passo 1</h1>
+        <p>Colete as coordenadas.Colete as coordenadas.Colete as coordenadas.Colete as coordenadas.Colete as coordenadas.Colete as coordenadas.</p>
+    </div>
+    <div class="coordsOptions" style="display: none;">
+
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
