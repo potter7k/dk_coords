@@ -31,7 +31,7 @@ function Sequencial:Add()
     local blipBefore = Markers[maxIndex - 1]
     if blipBefore then
         Sequencial:Remove(maxIndex - 1)
-        checkpoints[maxIndex - 1] = CreateCheckpoint(1, blipBefore.x, blipBefore.y, blipBefore.z - 1, blipNow.x, blipNow.y, blipNow.z - 1, 5.0, config.colors.rgb_2[1], config.colors.rgb_2[2], config.colors.rgb_2[3], 200, 1)
+        checkpoints[maxIndex - 1] = createCheckpoint(1, blipBefore.x, blipBefore.y, blipBefore.z - 1, blipNow.x, blipNow.y, blipNow.z - 1, config.colors.rgb_2[1], config.colors.rgb_2[2], config.colors.rgb_2[3])
     end
 
     checkpoints[maxIndex] = createCheckpoint(3, blipNow.x, blipNow.y, blipNow.z - 1, nil, nil, nil, config.colors.rgb_1[1], config.colors.rgb_1[2], config.colors.rgb_1[3])
