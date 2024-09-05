@@ -27,6 +27,12 @@ Os arquivos configuráveis estão nos seguintes diretórios:
 - `📂 server/config.lua`
 - `📂 web/presets.lua`
 
+## 🎥 Tutorial em Vídeo
+
+Para ajudar você a começar a usar o dk_coords, confira este tutorial em vídeo:
+
+<a href="https://www.youtube.com/watch?v=C-wEFgV1bqo" target="_blank">![SCRIPT GRATUITO de COLETA de COORDENADAS para FIVEM | INSTALAÇÃO e DEMONSTRAÇÃO](https://i9.ytimg.com/vi_webp/C-wEFgV1bqo/mqdefault.webp?v=66d9fed5&sqp=CNyB6LYG&rs=AOn4CLBnQih-MLwDoPRwh5Yf1YTCGhiS3A)</a>
+
 ### 🔒 Verificação de Permissão
 
 Por padrão, o script **não** inclui verificação de permissão. Caso deseje adicionar, faça isso em:
