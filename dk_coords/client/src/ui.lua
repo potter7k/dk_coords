@@ -30,7 +30,7 @@ end)
 
 RegisterNUICallback("selectOption",function(data,cb)
     if not data or not data.option then return end
-    if GetResourceState('vrp') == 'missing' then return print("Erro, script PolyZone desativado.") end
+    if GetResourceState('PolyZone') == 'missing' then return print("Erro, script PolyZone desativado.") end
     Main.collectingBlips = data.option
 
     Markers = {}
