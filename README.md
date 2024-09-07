@@ -8,7 +8,7 @@ Este script **gratuito** facilita a coleta de coordenadas pela equipe do servido
 
 ## 🚀 Implementação
 
-1. **Baixe o Script**: [🔗 Link de Download](https://github.com/potter7k/dk_coords/archive/refs/tags/v1.0.0.zip)
+1. **Baixe o Script**: [🔗 Link de Download](https://github.com/potter7k/dk_coords/archive/refs/tags/v1.0.1.zip)
 2. **Adicione ao Servidor**: Extraia o arquivo dk_coords para dentro da pasta do seu servidor.
 3. **Inicie o Script**: Start o script no servidor com o comando abaixo.
 
