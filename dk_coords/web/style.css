@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 :root {
     --mainColor: #727272;
+
+    --image-option-gradient: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 80%);
 }
 
 
@@ -46,11 +48,14 @@
     flex-direction: column;
 }
 
-.container .collectOption.sequencial {
-    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 80%), url('nui://dk_coords/web/images/sequencial.png');
+.container .collectOption.sequential {
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/sequential.png');
 }
 .container .collectOption.polyzone {
-    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 80%), url('nui://dk_coords/web/images/polyzone.png');
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/polyzone.png');
+}
+.container .collectOption.vehicles {
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/vehicles.png');
 }
 
 .container .collectOption:hover {

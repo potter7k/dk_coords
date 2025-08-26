@@ -5,6 +5,7 @@ Este script **gratuito** facilita a coleta de coordenadas pela equipe do servido
 - 🟢 **Coletar múltiplas coordenadas** com um preview em tempo real.
 - 🟢 **Gerar código automaticamente** para ser colado no arquivo do script.
 - 🟢 **Compatibilidade** com Polyzone.
+- 🟢 **Criar blips em outros scripts** com o export de criação de blips.
 
 ## 🚀 Implementação
 
@@ -23,9 +24,8 @@ Este script **gratuito** facilita a coleta de coordenadas pela equipe do servido
 
 Os arquivos configuráveis estão nos seguintes diretórios:
 
-- `📂 client/config.lua`
-- `📂 server/config.lua`
-- `📂 web/presets.lua`
+- `📂 shared/config.lua`
+- `📂 web/presets.json`
 
 ## 🎥 Tutorial em Vídeo
 
@@ -45,4 +45,4 @@ Contribuições são **bem-vindas**! Aceitamos **Pull Requests** e sugestões de
 
 ## 🛠️ Suporte
 
-Se precisar de suporte, não hesite em entrar em contato conosco através dos nossos canais de atendimento.
+Se precisar de suporte, não hesite em entrar em contato conosco através do nosso Discord.

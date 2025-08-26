@@ -132,9 +132,13 @@ $(document).ready(function(){
         }
 
         if (data.updateDescription) {
+            const $descriptionContainer = $(".descriptionContainer");
+            if (!$descriptionContainer.is(":visible")) {
+                $descriptionContainer.fadeIn(1000);
+            }
             let updateDescription = data.updateDescription;
-            $(".descriptionContainer h1").html(updateDescription.title);
-            $(".descriptionContainer p").html(updateDescription.description);
+            $descriptionContainer.find("h1").html(updateDescription.title);
+            $descriptionContainer.find("p").html(updateDescription.description);
             return;
         }
 
