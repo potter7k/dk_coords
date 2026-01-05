@@ -1,15 +1,26 @@
+--[[
+    ControlManager - Gerenciador de Controles
+    
+    Responsável por registrar e gerenciar os keybinds do script.
+    Controla o cooldown entre ações para evitar inputs duplicados.
+]]
+
 ControlManager = {}
 ControlManager.__index = ControlManager
 
+--- Cria uma nova instância do ControlManager
+---@param coordinateCollector table Instância do CoordinateCollector
+---@return table obj Instância do ControlManager
 function ControlManager:new(coordinateCollector)
     local obj = setmetatable({}, ControlManager)
     obj.collector = coordinateCollector
     obj.registered = false
     obj.controlTimer = GetGameTimer()
-    obj.cooldownTime = 500
+    obj.cooldownTime = 500 -- Tempo de cooldown entre ações (ms)
     return obj
 end
 
+--- Registra todos os keybinds configurados
 function ControlManager:register()
     if self.registered then return end
 
@@ -20,6 +31,9 @@ function ControlManager:register()
     end
 end
 
+--- Registra uma ação específica como keybind
+---@param action string Nome da ação
+---@param data table Dados do controle {control, title, desc}
 function ControlManager:registerAction(action, data)
     local keyName = "+dk_coords/" .. action
     local keyDesc = "Coordenadas: " .. data.desc
@@ -37,6 +51,8 @@ function ControlManager:registerAction(action, data)
     end)
 end
 
+--- Verifica se uma ação pode ser executada (cooldown)
+---@return boolean canExecute true se pode executar
 function ControlManager:canExecuteAction()
     if GetGameTimer() < self.controlTimer then return false end
     if not self.collector.ui.isOpen then return false end

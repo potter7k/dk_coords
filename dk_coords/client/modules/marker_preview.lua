@@ -1,6 +1,15 @@
+--[[
+    MarkerPreview - Pré-visualização de Marcadores
+    
+    Responsável por exibir o preview do marcador durante a coleta.
+    Mostra o heading atual e permite ajustar a altura (Z) do marcador.
+]]
+
 MarkerPreview = {}
 MarkerPreview.__index = MarkerPreview
 
+--- Cria uma nova instância do MarkerPreview
+---@return table obj Instância do MarkerPreview
 function MarkerPreview:new()
     local obj = setmetatable({}, MarkerPreview)
     obj.isActive = false
@@ -8,6 +17,8 @@ function MarkerPreview:new()
     return obj
 end
 
+--- Inicia o preview para adicionar um novo marcador
+--- Mostra o heading atual do jogador e desenha o marcador
 function MarkerPreview:startAddPreview()
     if self.isActive then return end
 
@@ -30,6 +41,9 @@ function MarkerPreview:startAddPreview()
     end)
 end
 
+--- Inicia o preview para mover a altura (Z) de um marcador existente
+---@param action string Ação de movimento ("up" ou "down")
+---@param coords table Coordenadas do marcador a mover
 function MarkerPreview:startMovePreview(action, coords)
     if self.isActive then return end
 
@@ -57,10 +71,13 @@ function MarkerPreview:startMovePreview(action, coords)
     end)
 end
 
+--- Para o preview atual
 function MarkerPreview:stop()
     self.isActive = false
 end
 
+--- Desenha um marcador na posição especificada
+---@param coords table Coordenadas do marcador
 function MarkerPreview:drawMarker(coords)
     local config = Config.Visual.markers
     DrawMarker(
@@ -74,10 +91,13 @@ function MarkerPreview:drawMarker(coords)
     )
 end
 
+--- Retorna os dados do último marcador movido
+---@return table lastMarkerData Dados do último marcador {x, y, z}
 function MarkerPreview:getLastMarkerData()
     return self.lastMarkerData
 end
 
+--- Limpa os dados do último marcador
 function MarkerPreview:clearLastMarkerData()
     self.lastMarkerData = {}
 end

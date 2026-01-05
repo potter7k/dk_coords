@@ -6,4 +6,4 @@ RegisterCommand("coords", function(source, args, rawCommand)
     TriggerClientEvent("dk_coords/toggleNui", source)
 end)
 
-print("dk_coords -> Script GRATUITO e OPEN SOURCE desenvolvido por DK Development - 2.0.0")
+print("dk_coords -> Script GRATUITO e OPEN SOURCE desenvolvido por DK Development - v" .. GetResourceMetadata(GetCurrentResourceName(), "version"))

@@ -3,7 +3,7 @@ game "gta5"
 
 author 'Potter <@potter7k>'
 description 'Script GRATUITO e OPEN SOURCE desenvolvido por DK Development. Discord: https://discord.gg/NJjUn8Ad3P'
-version '2.0.0'
+version '2.1.0'
 
 ui_page "web/index.html"
 
@@ -20,6 +20,7 @@ client_scripts {
     "client/modules/polyzone_handler.lua",
     "client/modules/sequential_handler.lua",
     "client/modules/vehicles_handler.lua",
+    "client/modules/racepoint_handler.lua",
     "client/modules/marker_preview.lua",
     "client/core/coordinate_collector.lua",
     "client/main.lua"

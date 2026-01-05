@@ -89,6 +89,8 @@ function CoordinateCollector:collectingMode(mode, handlerParams)
         self.sequenceHandler = PolyzoneHandler:new(handlerParams)
     elseif mode == "vehicles" then
         self.sequenceHandler = VehiclesHandler:new(handlerParams)
+    elseif mode == "racepoints" then
+        self.sequenceHandler = RacepointHandler:new(handlerParams)
     else
         print("Modo de sequência inválido: " .. tostring(mode))
         return

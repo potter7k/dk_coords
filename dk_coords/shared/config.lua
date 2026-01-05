@@ -54,3 +54,25 @@ Config.Permissions = {
     usePermissions = false,
     adminAce = "commands"
 }
+
+-- Configurações de Race Checkpoints
+Config.Sequences = {
+    ["racepoints"] = {
+        defaultPropModel = "prop_offroad_tyres02", -- Modelo de prop para checkpoints
+        defaultOffset = 3.0, -- Distância do centro para esquerda/direita
+        blipSprite = 315, -- Sprite do blip (315 = bandeira de corrida)
+        blipColor = 5, -- Cor do blip (5 = amarelo)
+        blipScale = 0.8, -- Escala do blip
+    },
+    ["sequential"] = {
+        defaultCheckPointModel = 3, -- Modelo do checkpoint padrão
+        lastCheckpointModel = 5, -- Modelo do último checkpoint
+    },
+    ["polyzone"] = {
+        wallsColor = Config.Visual.colors.primary, -- Cor das paredes do Polyzone
+    },
+    ["vehicles"] = {
+        defaultCheckPointModel = "sultan", -- Modelo do veículo padrão
+        defaultCheckpointColor = Config.Visual.colors.secondary, -- Cor do veículo padrão
+    },
+}

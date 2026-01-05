@@ -57,6 +57,9 @@
 .container .collectOption.vehicles {
     background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/vehicles.png');
 }
+.container .collectOption.racepoints {
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/racepoints.png');
+}
 
 .container .collectOption:hover {
     height: 100%;
