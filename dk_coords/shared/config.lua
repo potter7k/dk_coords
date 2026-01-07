@@ -65,8 +65,8 @@ Config.Sequences = {
         blipScale = 0.8, -- Escala do blip
     },
     ["sequential"] = {
-        defaultCheckPointModel = 3, -- Modelo do checkpoint padrão
-        lastCheckpointModel = 5, -- Modelo do último checkpoint
+        defaultCheckPointModel = 1, -- Modelo do checkpoint padrão
+        lastCheckpointModel = 3, -- Modelo do último checkpoint
     },
     ["polyzone"] = {
         wallsColor = Config.Visual.colors.primary, -- Cor das paredes do Polyzone
