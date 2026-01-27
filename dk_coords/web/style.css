@@ -49,16 +49,16 @@
 }
 
 .container .collectOption.sequential {
-    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/sequential.png');
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/sequential.webp');
 }
 .container .collectOption.polyzone {
-    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/polyzone.png');
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/polyzone.webp');
 }
 .container .collectOption.vehicles {
-    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/vehicles.png');
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/vehicles.webp');
 }
 .container .collectOption.racepoints {
-    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/racepoints.png');
+    background-image: var(--image-option-gradient), url('nui://dk_coords/web/images/racepoints.webp');
 }
 
 .container .collectOption:hover {
